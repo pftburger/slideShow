@@ -1,0 +1,33 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\SCHSCH\Documents\GitHub\slideShow\slideShow.v4p" systemname="slideShow" filename="C:\Users\SCHSCH\Documents\GitHub\slideShow\slideShow.v4p">
+   <BOUNDS type="Window" left="6540" top="2970" width="15285" height="10560">
+   </BOUNDS>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
+   <BOUNDS type="Node" left="8235" top="7560" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8235" top="7560" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20295" top="11055" width="6120" height="4860">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3480" top="1605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="3705" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Key Match" slicecount="1" values="+">
+   </PIN>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Device" dstnodeid="1" dstpinname="Keyboard">
+   </LINK>
+   </PATCH>

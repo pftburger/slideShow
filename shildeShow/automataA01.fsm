@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.54" author="Qfsm">
+  <machine nummooreout="8" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="Presentation" arrowtype="1" numbits="3" statefontweight="50" statefont="Helvetica" numin="8" transfontsize="8" transfontweight="50" type="1" numout="8" initialstate="0">
+    <outputnames_moore>s_out7,s_out6,s_out5,s_out4,s_out3,s_out2,s_out1,s_out0</outputnames_moore>
+    <inputnames>i_7,i_6,i_5,i_4,i_3,i_2,i_1,i_0</inputnames>
+    <outputnames>o_7,o_6,o_5,o_4,o_3,o_2,o_1,o_0</outputnames>
+    <itransition ypos="129" endx="212" xpos="152" endy="129"/>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="129" code="0" xpos="252" linewidth="1">Start</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="279" code="1" xpos="259" linewidth="1">NotebookOnTable</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="444" code="2" xpos="252" linewidth="1">DrawingOpen</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="596" code="3" xpos="251" linewidth="1">diagramAdded</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="726" code="4" xpos="259" linewidth="1">ObjectAdded</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="855" code="5" xpos="260" linewidth="1">dataSheetRemoved</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="983" code="6" xpos="265" linewidth="1">everythingGone</state>
+    <transition c1x="256.109116833034" c2y="215.6334325310724" c1y="192.2530218362587" description="" straight="1" type="1" ypos="168.872611141445" endx="257.9477327164707" xpos="255.1898088913156" endy="239.0138432258861" c2x="257.0284247747524">
+      <from>0</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">notebookEnters</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="265.326269831707" c2y="375.6313953664139" c1y="346.7185476861136" description="" straight="1" type="1" ypos="317.8057000058133" endx="258.5759594922143" xpos="268.7014250014533" endy="404.5442430467143" c2x="261.9511146619606">
+      <from>1</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">openToDrawing</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="253.0051864155767" c2y="532.1721735215393" c1y="508.0856539493347" description="" straight="1" type="1" ypos="483.9991343771301" endx="255.5418636464293" xpos="251.7368478001505" endy="556.2586930937439" c2x="254.273525031003">
+      <from>2</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">addDiagram</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="254.3546331713167" c2y="669.3759262701519" c1y="652.6502005335334" description="" straight="1" type="1" ypos="635.9244747969148" endx="256.1501180004836" xpos="253.4568907567332" endy="686.1016520067706" c2x="255.2523755859001">
+      <from>3</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0">addObject</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="258.1680567876109" c2y="798.8078182323966" c1y="782.4033082178551" description="" straight="1" type="1" ypos="765.9987982033136" endx="255.8840339565798" xpos="259.3100682031265" endy="815.212328246938" c2x="257.0260453720954">
+      <from>4</from>
+      <to>5</to>
+      <inputs default="0" any="0" invert="0">removeDatasheet</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="260.2796827106453" c2y="927.4356523011217" c1y="911.2025848016218" description="" straight="1" type="1" ypos="894.9695173021219" endx="257.7164295927077" xpos="261.5613092696141" endy="943.6687198006216" c2x="258.9980561516765">
+      <from>5</from>
+      <to>6</to>
+      <inputs default="0" any="0" invert="0">removeBook</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>

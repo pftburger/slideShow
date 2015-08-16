@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.54" author="Qfsm">
+  <machine nummooreout="0" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="automataA02" arrowtype="1" numbits="3" statefontweight="50" statefont="Helvetica" numin="0" transfontsize="8" transfontweight="50" type="2" numout="0" initialstate="0">
+    <outputnames_moore></outputnames_moore>
+    <inputnames></inputnames>
+    <outputnames></outputnames>
+    <itransition ypos="91" endx="303" xpos="212" endy="111"/>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="111" code="0" xpos="343" linewidth="1">emptyTable</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="247" code="1" xpos="241" linewidth="1">bookOnTable</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="656" code="3" xpos="264" linewidth="1">datasheetOnTable</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="526" code="4" xpos="199" linewidth="1">physicalObjectOnTable</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="753" code="5" xpos="436" linewidth="1">datasheetRemoved</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="716" code="6" xpos="654" linewidth="1">everythingRemoved</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="587" code="7" xpos="765" linewidth="1">justBookReturns</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="394" code="2" xpos="170" linewidth="1">bookOpenToDrawing</state>
+    <transition c1x="312.5674185022951" c2y="196.2571020273069" c1y="173.1004109511655" description="" straight="1" type="2" ypos="149.943719875024" endx="269.9655172413793" xpos="333.868369132753" endy="219.4137931034483" c2x="291.2664678718372">
+      <from>0</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">bookEnters</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="205.882589367824" c2y="330.3048291017985" c1y="305.2241939247277" description="" straight="1" type="2" ypos="280.1435587476568" endx="180.436361005711" xpos="218.6057035488805" endy="355.3854642788693" c2x="193.1594751867675">
+      <from>1</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">openToDrawing</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="330.6260284459918" c2y="714.3070450304133" c1y="698.1064909171172" description="" straight="1" type="2" ypos="681.9059368038217" endx="402.9229399172189" xpos="294.4775727103784" endy="730.5075991437088" c2x="366.7744841816054">
+      <from>3</from>
+      <to>5</to>
+      <inputs default="0" any="0" invert="0">removeDatasheet</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="233.0776884164908" c2y="597.5291721486823" c1y="578.3229598841077" description="" straight="1" type="2" ypos="559.1167476195333" endx="256.365213635911" xpos="221.4339258067806" endy="616.7353844132567" c2x="244.7214510262009">
+      <from>4</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">addDiagram</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="521.986408921854" c2y="728.7992678218773" c1y="740.0612107597062" description="" straight="1" type="2" ypos="751.3231536975353" endx="614.0295530147474" xpos="475.9648368754072" endy="717.5373248840482" c2x="568.0079809683007">
+      <from>5</from>
+      <to>6</to>
+      <inputs default="0" any="0" invert="0">removeEverything</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="702.4855500161615" c2y="639.0488922400232" c1y="666.1099825778696" description="" straight="1" type="2" ypos="693.1710729157157" endx="733.7652476222788" xpos="686.8457012131029" endy="611.987801902177" c2x="718.1253988192202">
+      <from>6</from>
+      <to>7</to>
+      <inputs default="0" any="0" invert="0">bookReturns</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="164.5156458992298" c2y="471.6150066167153" c1y="451.7811692693679" description="" straight="1" type="2" ypos="431.9473319220206" endx="178.8451589790366" xpos="157.3508893593265" endy="491.4488439640627" c2x="171.6804024391332">
+      <from>2</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0">addObject</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>
