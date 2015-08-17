@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\SCHSCH\Documents\GitHub\slideShow\vvvv_45beta33.7_x86\lib\nodes\plugins\Timeliner (Animation) help.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.9.dtd" >
+   <PATCH nodename="C:\Users\joreg\dev\repos\vvvv\public\vvvv45\lib\nodes\plugins\Timeliner (Animation) help.v4p">
    <BOUNDS height="9585" left="2640" top="1200" type="Window" width="13125">
    </BOUNDS>
    <NODE componentmode="InABox" id="15" nodename="IOBox (String)">
@@ -205,7 +205,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="0" nodename="Timeliner (Animation)">
-   <PIN pinname="Pin Settings" slicecount="6" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Automata0&quot; Type=&quot;Automata&quot; SliceCount=&quot;1&quot; Height=&quot;40&quot; Parent=&quot;0&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-1.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;String0&quot; Type=&quot;String&quot; SliceCount=&quot;1&quot; Height=&quot;40&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; /&gt;|,|&lt;PIN Name=&quot;Color0&quot; Type=&quot;Color&quot; SliceCount=&quot;1&quot; Height=&quot;61&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; /&gt;|,|&lt;PIN Name=&quot;String1&quot; Type=&quot;String&quot; SliceCount=&quot;1&quot; /&gt;|">
+   <PIN pinname="Pin Settings" slicecount="5" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Automata0&quot; Type=&quot;Automata&quot; SliceCount=&quot;1&quot; Height=&quot;40&quot; Parent=&quot;0&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-1.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;String0&quot; Type=&quot;String&quot; SliceCount=&quot;1&quot; Height=&quot;40&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; /&gt;|,|&lt;PIN Name=&quot;Color0&quot; Type=&quot;Color&quot; SliceCount=&quot;1&quot; Height=&quot;61&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; /&gt;|">
    </PIN>
    <BOUNDS height="0" left="750" top="2280" type="Node" width="0">
    </BOUNDS>
@@ -213,9 +213,9 @@
    </BOUNDS>
    <BOUNDS height="5160" left="750" top="2280" type="Box" width="11445">
    </BOUNDS>
-   <PIN pinname="Translate" slicecount="1" values="1.581">
+   <PIN pinname="Translate" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Scale" slicecount="1" values="36.7934">
+   <PIN pinname="Scale" slicecount="1" values="50">
    </PIN>
    <PIN pinname="Automata0-Time0" slicecount="3" values="0,10,1.7E308">
    </PIN>
@@ -231,7 +231,7 @@
    </PIN>
    <PIN pinname="String0-Value0" slicecount="2" values="|go on|,|nothing to see|">
    </PIN>
-   <PIN pinname="Color0-Time0" slicecount="2" values="3.27332368712745,7.25999975204468">
+   <PIN pinname="Color0-Time0" slicecount="2" values="2.91999983787537,7.25999975204468">
    </PIN>
    <PIN pinname="Color0-Color0" slicecount="2" values="|0.00000,1.00000,0.00000,1.00000|,|0.00000,0.48922,0.09980,1.00000|">
    </PIN>
@@ -247,9 +247,9 @@
    </PIN>
    <PIN pinname="Automata0" visible="1">
    </PIN>
-   <PIN pinname="Value0-Time0" slicecount="7" values="1.8599998664856,3.01989946594238,4.05999946594238,5.41999959945679,7.05999946594238,7.65999937057495,8.39999961853028">
+   <PIN pinname="Value0-Time0" slicecount="7" values="1.8599998664856,3.17999982833862,4.05999946594238,5.41999959945679,7.05999946594238,7.65999937057495,8.39999961853028">
    </PIN>
-   <PIN pinname="Value0-Value0" slicecount="7" values="0.566433572060578,-0.384615391492844,0.251934746106465,-0.440559446811676,0.272727280855179,-0.412587404251099,0.0209790213697858">
+   <PIN pinname="Value0-Value0" slicecount="7" values="0.566433572060578,-0.384615391492844,0.398601412773132,-0.440559446811676,0.272727280855179,-0.412587404251099,0.0209790213697858">
    </PIN>
    <PIN pinname="Value0-InType0" slicecount="7" values="2,2,2,2,2,2,2">
    </PIN>
@@ -282,8 +282,4 @@
    <PIN pinname="String Type" slicecount="1" values="URL">
    </PIN>
    </NODE>
-   <PACK Name="image" Version="0.2.0">
-   </PACK>
-   <PACK Name="addonpack" Version="33.7.0">
-   </PACK>
    </PATCH>
